@@ -1,6 +1,6 @@
 # PDF Reader
 
-This PDF reader is in form of a web application and can be used to read any PDF document.
+This PDF reader is in form of a web application and can be used to read any PDF document.<br/>
 It depends on pdf.js developed by mozilla.
 
 The reader works well with every reader and gives the basics such as :
