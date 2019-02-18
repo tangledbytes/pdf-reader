@@ -4,31 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-    crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>PDF Reader</title>
 </head>
-<body class="container">
-    <div class="top-bar">
-        <button class="btn" id="prev-page">
-            <i class="fas fa-arrow-circle-left"></i> Prev Page
-        </button>
-        <button class="btn" id="next-page">
-            Next Page <i class="fas fa-arrow-circle-right"></i>
-        </button>
-        <span class="page-info">
-            <input type="number" id="page-num"> of <span id="page-count"></span>
-        </span>
-        <span class="set-scale">
-            <input type="number" class="scale" placeholder="Scale">
-            <button class="scale-btn">Set Scale</button>
-        </span>
+<body>
+    <div class="greet">Welcome to the PDF Viewer</div>
+    <div class="instructions">
+        How to use: 
+        <ol>
+            <li>Make sure the PDF is in Docs folder of this web application</li>
+            <li>Choose file from the input option given below</li>
+            <li>Submit it!</li>
+        </ol>
+        You are ready to use the viewer!
     </div>
-    <canvas id="pdf-render"></canvas>
+    <form action="/Reader.html" class="form" method="GET">
+        <label for="name" class="locator">Choose file</label>
+        <input type="file" name="name" id="locator">
+        <button class="submit"type="submit">Submit</button>
+    </form>
 </body>
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-<script src="js/main.js"></script>
 </html>

@@ -1,0 +1,41 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to right, #eadafa, #f4adfd);
+}
+
+.greet{
+    font-size: 3rem;
+    text-align: center;
+}
+.instructions{
+    font-size: 1.2rem;
+    margin: 2rem 4rem;
+}
+.form{
+    color: white;
+    margin: 2rem auto;
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 12rem;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.6rem 0.6rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+#locator, .submit, .locator{
+    display: block;
+    margin: 2rem;
+}
+.locator{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+}
+.submit{
+    width: 5rem;    
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 0.8rem;
+    border: none;
+    background: linear-gradient(to right, #b978fa, #ea8af7);
+}

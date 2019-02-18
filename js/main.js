@@ -4,13 +4,13 @@ const controller = (function(){
     pageNum = 1,
     pageIsRendering = false,
     pageNumIsPending = null,
-    scale = 2;
-    const url = '../Docs/Beginning Node.js.pdf',
-        canvas = document.querySelector('#pdf-render'),
+    scale = 2,
+    url = '../Docs/Beginning Node.js.pdf';
+    const canvas = document.querySelector('#pdf-render'),
         ctx = canvas.getContext('2d');
 
-    const GetURL = function(){
-        url = chrome.extension.getURL('content/web/viewer.html');
+    const GetURL = function(link){
+        url = link;
     }
 
     const setupEventListeners = () => {
@@ -140,9 +140,9 @@ const controller = (function(){
 
     return {
         initate: function(){
+            GetURL('../Docs/' + window.location.href.split('=')[1].replace('+', ' '));
             setupEventListeners();
             displayPDF(displayPDFfuncs().renderPage);
-            GetURL();
         }
     }
 })();
