@@ -24,7 +24,6 @@ You are ready to use the viewer!
 
 ## Here are some ScreenShots of it
 ![ss1](https://user-images.githubusercontent.com/45818886/52954190-88449480-33af-11e9-861c-923c72d79967.png)
-
-
-
+<br/>
+<br/>
 ![ss2](https://user-images.githubusercontent.com/45818886/52954197-8f6ba280-33af-11e9-9327-791160aee7f0.png)
