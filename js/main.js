@@ -30,9 +30,15 @@ const controller = (function(){
 
         // For scale adjustment
         document.querySelector('.scale-btn').addEventListener('click', setScale);
+        document.querySelector('.scale').addEventListener('keypress', function(event){
+            if(event.keyCode === 13 || event.which === 13)
+            {
+                setScale();
+            }
+        });
 
         // For Navigation
-        document.addEventListener('keypress', function(event){
+        document.getElementById('page-num').addEventListener('keypress', function(event){
             if(event.keyCode === 13 || event.which === 13)
             {
                 navigate();
