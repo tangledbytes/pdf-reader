@@ -3,7 +3,7 @@
 This PDF reader is in form of a web application and can be used to read any PDF document.<br/>
 It depends on pdf.js developed by mozilla.
 
-The reader works well with every reader and gives the basics such as :
+The reader works well with every reader and gives the basic functionalities such as :
 1. Navigation to any page
 2. Adjusting scale of the page (Default is 2)
 
@@ -12,8 +12,8 @@ create a bookmark. Feel free to fork the project and add the missing features!
 
 ## How it works
 
-NOTE: It is very important to run the application through a server (any live server will alos serve the purpose) or else
-the app will report error as pdf.js uses Fetch API to fetch documents and fetch works with CORS enabled.
+NOTE: It is very important to run the application through a server (any live server will also serve the purpose) or else
+the app will report error as pdf.js uses Fetch API to fetch documents which by default works with CORS enabled.
 
 How to use:
 1. Make sure the PDF is in Docs folder of this web application
