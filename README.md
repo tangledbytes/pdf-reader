@@ -17,7 +17,7 @@ the app will report error as pdf.js uses Fetch API to fetch documents and fetch 
 
 How to use:
 1. Make sure the PDF is in Docs folder of this web application
-2. Choose file from the input option given below
+2. Choose file from the input option given
 3. Submit it!
 
 You are ready to use the viewer!
